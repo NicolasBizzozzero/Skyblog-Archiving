@@ -31,7 +31,6 @@ def main():
     ):
         logger.info(f'Archiving user "{username}"')
         archiver.archive_user(username=username)
-        break
 
     archiver.host_local()
 
