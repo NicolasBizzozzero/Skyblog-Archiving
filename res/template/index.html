@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{{ username }} Skyblog Archive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <link rel="icon" href="img/skyblog.ico" type="image/x-icon" />
+  </head>
+  <body style="background-image: url(img/background.jpg); {{ background_color }} {{ theme_color_with_attribute }}">
+    <div class="page-container">
+      <div class="flex-container">
+        <div class="flex-child left" id="column_left" style="background-color: {{ theme_color }}; color: #{{ color_block_title }}">
+          <h1 class="blog-title">{{ title }}</h1>
+          <img class="profile-picture" src="img/profile_picture.jpg">
+          <p class="description">{{ description }}</p>
+        </div>
+        <div class="flex-child center" id="posts">{{ posts }}</div>
+      </div>
+    </div>
+  </body>
+</html>
