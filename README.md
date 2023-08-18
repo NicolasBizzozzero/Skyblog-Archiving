@@ -22,7 +22,7 @@ Finally, run the software :
 $ python src/__main__.py
 ```
 
-Archived blogs will be saved in the `archives` directory.
+Archived blogs will be saved in the `archives` directory. After archiving, the software will start a local HTTP server located at http://127.0.0.1:8000/
 
 
 # Known issues
